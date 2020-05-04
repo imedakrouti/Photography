@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+h1{
+    text-align: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+}
+.item{
+    position: relative;
+    z-index: 8;
+    width: 300px;
+    text-align: center;
+    margin: 30px;
+    color:#eee;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)), url("../images/business.jpeg")no-repeat center center/cover;
+    padding: 20px;
+    border-radius:20px;
+   
+    box-shadow:5px 8px 11px #333;
+}
+.item h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin:20px 0;
+}
+.item p{
+    
+    margin: 0 auto  50px;
+}
+.btn{
+    text-decoration: none;
+    padding: 8px;
+   
+    color:#28a745;
+  
+position: relative;
+    padding-bottom:8px;
+    /*border-bottom:3px solid white;
+    */transition: all 3s;
+    -webkit-border-radius:25px;
+    -moz-border-radius:25px;
+    -ms-border-radius:25px;
+    -o-border-radius:25px;
+    -webkit-transition: all 3s;
+    -moz-transition: all 3s;
+    -ms-transition: all 3s;
+    -o-transition: all 3s;
+}
+/* a:hover{
+    
+    color:white;
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+}*/
+.btn:after{
+    content:"";
+    position: absolute;
+    bottom:0;
+    left:0%;
+    width: 30%;
+    height: 3px;
+    background:green;
+
+
+} 
+.btn:hover:after{
+    width: 100%;
+}
+.active-itemm{
+    text-decoration: none;
+    color:rgb(228, 26, 26);
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    margin:30px;
+    border-radius:8px;;
+    width:30%;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    -ms-border-radius:8px;
+    -o-border-radius:8px;
+}
+.nav-link{
+    text-decoration: none;
+    color:red;
+    padding: 8px;
+    margin:30px;
+    padding-left: 0;
+    position: relative;
+    
+}
+ul{
+    display: flex;
+    margin-bottom:300px;
+}
+ul li{
+    list-style: none;
+}
+.nav-link:after{
+    content:"";
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    background:#333;
+    bottom:0;
+    top:0;
+    left: 0;
+    transition: 0.4s;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
+}
+.nav-link:hover:after{
+    width: 100%;
+}
